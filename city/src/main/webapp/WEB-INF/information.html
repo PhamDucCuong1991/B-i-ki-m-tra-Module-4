@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/information" method="get" enctype="multipart/form-data">
+
+    <a th:utext="${'<b>ID thành phố: </b>'+ city.id}"></a><br>
+    <a th:utext="${'<b>Tên thành phố: </b>'+ city.city}"></a><br>
+    <a th:utext="${'<b>Tên quốc gia: </b>'+ city.country}"></a><br>
+    <a th:utext="${'<b>Diện tích: </b>'+ city.area}"></a><br>
+    <a th:utext="${'<b>Dân số: </b>'+ city.population}"></a><br>
+    <a th:utext="${'<b>Thu nhập bình quân: </b>'+ city.gdp}"></a><br>
+    <a th:utext="${'<b>Mô tả Tp: </b>'+ city.describe}"></a><br>
+
+    <a href="home">Trở về</a>
+
+</form>
+
+</body>
+</html>
